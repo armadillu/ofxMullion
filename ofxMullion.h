@@ -35,11 +35,11 @@ class ofxMullion{
 	void enable(){ enabled = true; }
 	void disable(){ enabled = false; }
 
-	void draw(){
+	void draw(float w = ofGetWidth(), float h = ofGetHeight()){
 		if(enabled){
 			ofPushView();
 				ofSetupScreen();
-				ofScale(ofGetWidth(), ofGetHeight());
+				ofScale(w, w);
 				m.draw();
 			ofPopView();
 		}
