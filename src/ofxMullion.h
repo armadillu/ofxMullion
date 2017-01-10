@@ -39,7 +39,7 @@ class ofxMullion{
 		if(enabled){
 			ofPushView();
 				ofSetupScreen();
-				ofScale(w, w);
+				ofScale(w, h);
 				m.draw();
 			ofPopView();
 		}
