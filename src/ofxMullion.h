@@ -17,6 +17,7 @@ class ofxMullion{
 	public:
 
 	void setup(int w, int h){
+		if(w == 0 || h == 0) return;
 		enabled = false;
 		m.setMode(OF_PRIMITIVE_LINES);
 		float stepX = 1.0f / (float) w;
